@@ -29,8 +29,19 @@
         "default": 0
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "patternProperties": {
+          "^RUB_": {
+            "type": "string"
+          },
+          "^USD_": {
+            "type": "integer"
+          }
+        }
       }
     }
   }
 }
+
+
+
